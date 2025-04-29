@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="960.0" styleClass="main-bg" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="156.0" layoutY="527.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="floor-bg" width="960.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Pane layoutX="490.0" layoutY="98.0" prefHeight="536.0" prefWidth="439.0" styleClass="menu">
+         <children>
+            <Text fill="WHITE" layoutX="46.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Menu" textAlignment="CENTER" wrappingWidth="346.5742645263672">
+               <font>
+                  <Font name="Corbel" size="32.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="-6.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/coke.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="95.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/sprite.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="130.0" fitWidth="190.0" layoutX="229.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/drpepper.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="76.0" layoutX="339.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/pepsi.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="button5" layoutX="29.0" layoutY="90.0" mnemonicParsing="false" onAction="#buyCoke" opacity="0.0" prefHeight="150.0" prefWidth="70.0" styleClass="item-btn">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button11" layoutX="130.0" layoutY="90.0" mnemonicParsing="false" onAction="#buySprite" opacity="0.0" prefHeight="150.0" prefWidth="70.0" styleClass="item-btn">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button21" layoutX="236.0" layoutY="90.0" mnemonicParsing="false" onAction="#buyDrPepper" opacity="0.0" prefHeight="150.0" prefWidth="70.0" styleClass="item-btn">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button31" layoutX="342.0" layoutY="90.0" mnemonicParsing="false" onAction="#buyPepsi" opacity="0.0" prefHeight="150.0" prefWidth="70.0" styleClass="item-btn">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="countLabel" layoutX="53.0" layoutY="294.0" text="(32)" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="countLabel1" layoutX="154.0" layoutY="295.0" text="(32)" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="countLabel2" layoutX="259.0" layoutY="295.0" text="(32)" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="countLabel3" layoutX="363.0" layoutY="295.0" text="(32)" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="12.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soft Drinks" textAlignment="CENTER" wrappingWidth="165.5742645263672">
+               <font>
+                  <Font name="Corbel Bold" size="26.0" />
+               </font>
+            </Text>
+            <Label fx:id="countLabel5" layoutX="48.0" layoutY="246.0" text="Coke" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="countLabel51" layoutX="144.0" layoutY="247.0" text="Sprite" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="countLabel511" layoutX="233.0" layoutY="248.0" text="Dr Pepper" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="countLabel5111" layoutX="356.0" layoutY="247.0" text="Pepsi" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceLabel1" layoutX="46.0" layoutY="272.0" styleClass="price" text="\$1.99" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceLabel2" layoutX="145.0" layoutY="273.0" styleClass="price" text="\$1.99" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceLabel3" layoutX="250.0" layoutY="273.0" styleClass="price" text="\$1.99" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceLabel4" layoutX="353.0" layoutY="272.0" styleClass="price" text="\$1.99" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="-11.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entrees" textAlignment="CENTER" wrappingWidth="165.5742645263672">
+               <font>
+                  <Font name="Corbel Bold" size="26.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/grilledcheese.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="countLabel52" layoutX="32.0" layoutY="472.0" text="Grilled Cheese" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="countLabel4" layoutX="147.0" layoutY="474.0" text="(64)" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceLabel5" layoutX="35.0" layoutY="494.0" styleClass="price" text="\$4.99" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="button51" layoutX="34.0" layoutY="367.0" mnemonicParsing="false" onAction="#buyGrilledCheese" opacity="0.0" prefHeight="100.0" prefWidth="140.0" styleClass="item-btn">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="totalLabel" alignment="CENTER" layoutX="263.0" layoutY="485.0" prefHeight="26.0" prefWidth="158.0" text="Your Total: $0" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Text fill="WHITE" layoutX="281.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Grilled Cheese Food Truck" textAlignment="CENTER" underline="true" wrappingWidth="418.5742645263672">
+         <font>
+            <Font name="Impact" size="39.0" />
+         </font>
+      </Text>
+      
+
+      <Button layoutX="828.0" layoutY="643.0" onAction="#onOpenAdminView" text="Open Admin View" />
+      <ImageView fitHeight="278.0" fitWidth="451.0" layoutX="14.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/food-truck.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

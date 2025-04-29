@@ -1,0 +1,39 @@
+.main-bg{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #5D2074, #AE3CDA);
+}
+
+.admin-bg{
+    -fx-background-color: linear-gradient(to bottom right, #2E389C, #A9B5FF);
+}
+
+.floor-bg{
+    -fx-fill: linear-gradient(to top right, #4A1568, #8C1CB8);
+}
+
+.admin-floor-bg{
+    -fx-fill: linear-gradient(to top right, #2E389C, #363DC2);
+}
+
+.menu{
+    -fx-background-color: #272525;
+    -fx-border-radius: 10 10 0 0;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.item-btn{
+    -fx-opacity: 0.1;
+}
+
+.admin-btn{
+    -fx-background-color: #0DBBB7;
+    -fx-text-fill: #ffffff;
+}
+
+.restock-btn{
+    -fx-background-color: #982cd6;
+    -fx-text-fill: #ffffff;
+}
+
+.price{
+    -fx-text-fill: #FFBB6D;
+}
